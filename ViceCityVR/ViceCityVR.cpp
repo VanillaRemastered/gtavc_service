@@ -8,7 +8,8 @@ using namespace plugin;
 class ViceCityVR {
 public:
     ViceCityVR() {
-        SetWindowText(GetActiveWindow(), "test");
+        SetWindowText(GetActiveWindow(), "Vanilla Remastered Vice City");
+
     }
     ~ViceCityVR() {
         CVanillaCore::PrintMessage();

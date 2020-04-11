@@ -16,7 +16,6 @@
 // This is the constructor of a class that has been exported.
 CVanillaCore::CVanillaCore()
 {
-    SetWindowText(GetActiveWindow(), "Vanilla Remastered Vice City");
     return;
 }
 
