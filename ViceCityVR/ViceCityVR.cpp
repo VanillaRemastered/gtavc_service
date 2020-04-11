@@ -1,11 +1,16 @@
-#include "plugin.h"
-
+#include <plugin.h>
+#include "VanillaCore.h"
+#include "CMessages.h"
+#include "CModelInfo.h"
+#include "extensions/ScriptCommands.h"
 using namespace plugin;
 
 class ViceCityVR {
 public:
     ViceCityVR() {
-        // Initialise your plugin here
-        
+        SetWindowText(GetActiveWindow(), "test");
+    }
+    ~ViceCityVR() {
+        CVanillaCore::PrintMessage();
     }
 } viceCityVR;

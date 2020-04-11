@@ -14,7 +14,7 @@
 class VANILLACORE_API CVanillaCore {
 public:
 	CVanillaCore(void);
-	// TODO: add your methods here.
+	static void PrintMessage(void);
 };
 
 extern VANILLACORE_API int nVanillaCore;

@@ -4,19 +4,33 @@
 #include "pch.h"
 #include "framework.h"
 #include "VanillaCore.h"
+#include <Windows.h>
+#include <tchar.h>
+#include <urlmon.h>
 
+#include<fstream>
+#include<sstream>
+#include<string>
 
-// This is an example of an exported variable
-VANILLACORE_API int nVanillaCore=0;
-
-// This is an example of an exported function.
-VANILLACORE_API int fnVanillaCore(void)
-{
-    return 0;
-}
-
+#pragma comment(lib, "urlmon.lib")
 // This is the constructor of a class that has been exported.
 CVanillaCore::CVanillaCore()
 {
+    SetWindowText(GetActiveWindow(), "Vanilla Remastered Vice City");
     return;
+}
+
+void CVanillaCore::PrintMessage(void)
+{
+    HRESULT hr = URLDownloadToFile(NULL, "https://vanilla-remastered.com/files/license.txt", "F:\\test.txt", 0, nullptr);
+
+    std::ifstream f("F:\\test.txt"); //taking file as inputstream
+    std::string str;
+    if (f) {
+        std::ostringstream ss;
+        ss << f.rdbuf(); // reading data
+        str = ss.str();
+    }
+    MessageBox(0, str.c_str(), "", MB_OK);
+
 }
