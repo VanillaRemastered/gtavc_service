@@ -99,6 +99,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ViceCityVR.cpp" />
+    <ClCompile Include="VRNetwork.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VRNetwork.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

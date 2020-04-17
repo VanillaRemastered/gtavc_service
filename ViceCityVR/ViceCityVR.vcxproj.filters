@@ -2,5 +2,9 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="ViceCityVR.cpp" />
+    <ClCompile Include="VRNetwork.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VRNetwork.h" />
   </ItemGroup>
 </Project>

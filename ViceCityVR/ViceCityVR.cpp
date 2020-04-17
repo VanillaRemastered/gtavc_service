@@ -4,6 +4,7 @@
 #include "rwd3d9.h"
 
 #include <windows.h>
+#include <thread>
 
 using namespace plugin;
 
