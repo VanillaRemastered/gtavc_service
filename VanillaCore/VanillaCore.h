@@ -18,5 +18,4 @@ public:
 };
 
 extern VANILLACORE_API int nVanillaCore;
-
 VANILLACORE_API int fnVanillaCore(void);
