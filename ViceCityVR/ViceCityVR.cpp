@@ -7,9 +7,9 @@
 
 using namespace plugin;
 
-class ScriptCommands {
+class VanillaRemasteredVC{
 public:
-    ScriptCommands() {
+    VanillaRemasteredVC() {
         Events::gameProcessEvent += [] {
            
             
@@ -18,4 +18,4 @@ public:
 
         };
     }
-} scriptCommands;
+} VanillaRemasteredVC;
