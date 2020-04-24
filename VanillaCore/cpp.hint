@@ -1,2 +1,0 @@
-#define VANILLACORE_API __declspec(dllexport)
-#define VANILLACORE_API __declspec(dllimport)
